@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/music.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title></title>
+</head>
+<body>
+<audio id="musicbox"></audio>
+<section id="musicplayer">
+    <section id="musiclist">
+        <textarea name="musicname" id="musicname" autofocus placeholder="输入音乐名称" cols="30" rows="10"></textarea>
+        <input type="button" id="outmusic" value="上传音乐"/>
+    </section>
+    <section id="music">
+    <div id="list">
+        <p class="title">
+            这是一个音乐标题
+        </p>
+        <p class="pic">
+            <img src="images/pic6.jpg" alt="pic"/>
+        </p>
+        <p class="hidde">隐藏</p>
+    </div>
+    <div id="control">
+        <p class="current">
+            <span>进度</span>
+            <input type="range" value="0" class="progress"/>
+            <span class="time">00/00</span>
+        </p>
+        <p class="controls">
+            <span class="iconfont tingzhi off">
+                <em>关闭</em>
+            </span>
+            <span class="iconfont icon pre">
+                <em>上一首</em>
+            </span>
+            <span class="iconfont zanting-copy pause">
+                <em>暂停</em>
+            </span>
+            <span class="iconfont icon1 next">
+                <em>下一首</em>
+            </span>
+
+            <!--<span class="iconfont zanting"></span>-->
+        </p>
+        <p class="voice">
+            <span class="voicenum">音量</span>
+            <input type="range" value="0.5" class="volum"/>
+            <span class="high">100</span>
+        </p>
+    </div>
+</section>
+</section>
+
+
+
+</body>
+</html>

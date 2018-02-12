@@ -1,0 +1,253 @@
+*{
+  margin:0;
+  padding:0;
+}
+@font-face {font-family: 'iconfont';
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome��firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome��firefox��opera��Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@keyframes Round {
+0%{
+  transform: translateX(0px);
+}
+  12.5%{
+    transform: translateX(10px);
+  }
+  25%{
+    transform: translateX(20px);
+  }
+  37.5%{
+    transform: translateX(10px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  62.5%{
+    transform: translateX(-10px);
+  }
+  75%{
+    transform: translateX(-20px);
+  }
+  87.5%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+.tingzhi:before{
+  content: "\e6b9";
+}
+.icon:before{
+  content: "\e606";
+}
+.icon1:before{
+  content: "\e607";
+}
+.zanting-copy:before{
+  content: "\e600";
+}
+.zanting:before{
+  content: "\e62d";
+}
+#musicplayer {
+  width:60rem;
+  margin:10rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  #musiclist {
+    width:20rem;
+    height:20rem;
+    border:1px solid #484848;
+    border-radius: 5rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+0,6393c1+100;Grey+Blue+3D */
+    background: rgb(207,231,250); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+    -moz-box-shadow: 0px 0px 20px #5772ff;
+    -webkit-box-shadow: 0px 0px 20px #5772ff;
+    box-shadow: 0px 0px 20px #5772ff;
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    #musicname {
+      background: rgb(207,231,250); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(207,231,250,1) 0%, rgb(118, 171, 221) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(207,231,250,1) 0%, rgb(120, 173, 224) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(207,231,250,1) 0%, rgb(128, 185, 237) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 );
+      width:80%;
+      padding:5% 10%;
+      margin:0 auto;
+      height:70%;
+      border-radius: 5rem;
+      outline: none;
+      text-indent: 5rem;
+      font:100 1.2rem/1.4rem "Vijaya";
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border:none;
+    }
+    #outmusic {
+      display: block;
+      margin:1rem auto;
+      width:6rem;
+      height:2rem;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+0,ad1283+49,de47ac+100 */
+      background: rgb(203,96,179); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(203,96,179,1) 0%, rgba(173,18,131,1) 49%, rgba(222,71,172,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(173,18,131,1) 49%,rgba(222,71,172,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(203,96,179,1) 0%,rgba(173,18,131,1) 49%,rgba(222,71,172,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
+      font:600 1rem/2.2rem "Vijaya";
+      outline: none;
+      border: none;
+      color:#fff;
+      cursor: pointer;
+      -moz-border-radius: 38px;
+      -webkit-border-radius: 38px;
+      border-radius: 38px;
+    }
+  }
+  #music {
+    width:35.8rem;
+    height:14.2rem;
+    border:1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:#212121;
+    padding:3rem;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+50,a80077+51,db36a4+100;Pink+Gloss */
+    background: rgb(203,96,179); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
+    -moz-border-radius: 48px;
+    -webkit-border-radius: 48px;
+    border-radius: 48px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 0px 20px #3c0973;
+    -webkit-box-shadow: 0px 0px 20px #310757;
+    box-shadow: 0px 0px 20px #3a0767;
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    opacity: 0.93;
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 93);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    #list {
+      width:30%;
+      height:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title{
+        height:30%;
+        font:400 1.2rem/1.4rem "Vijaya";
+        animation: Round 8s linear 0s infinite;
+        text-align: center;
+      }
+      .pic {
+        height:66%;
+        -moz-border-radius: 31px;
+        -webkit-border-radius: 31px;
+        border-radius: 31px;
+        margin-bottom: 1rem;
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        img {
+          width:100%;
+          height:100%;
+          -moz-border-radius: 31px;
+          -webkit-border-radius: 31px;
+          border-radius: 31px;
+          /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        }
+      }
+      .hidde {
+          width:60%;
+          margin:0 auto;
+        height:14%;
+        cursor: pointer;
+        color: rgb(203, 64, 85);
+        font:600 1.2rem/2.4rem "Vijaya";
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+0,6393c1+100;Grey+Blue+3D */
+        background: rgb(74, 147, 20); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(207,231,250,1) 0%, rgb(74, 147, 20) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(207,231,250,1) 0%, rgb(74, 147, 20) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(207,231,250,1) 0%, rgb(74, 147, 20) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+
+        text-align: center;
+      }
+    }
+    #control{
+      width:66%;
+      height:100%;
+      .current{
+        height:30%;
+        font:100 1.2rem/4rem "Vijaya";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        input {
+          display: block;
+          width:66%;
+          height:100%;
+        }
+      }
+      .controls {
+        height:40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        span {
+          font:100 2.2rem/3rem "iconfont";
+          transition: color 300ms ease;
+          cursor: pointer;
+          em {
+            display: block;
+            font:100 1.2rem/2rem "Vijaya";
+          }
+        }
+        span:hover{
+          color: #ffc2b6;
+        }
+      }
+      .voice{
+        height:30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span {
+          font:100 1.2rem/4rem "Vijaya";
+        }
+        input {
+          display: block;
+          width:76%;
+          height:100%;
+        }
+      }
+    }
+  }
+}
